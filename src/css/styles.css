@@ -12,9 +12,75 @@ body {
   line-height: 1.5;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
-  margin-bottom: 16px;
+  margin: 15px 0 15px 0;
+  border: 1px solid grey;
+  border-radius: 4px;
+  outline: rgba(0, 0, 0, 0);
+}
+
+#search-box:focus {
+  border: 2px solid rgb(3, 3, 161);
+}
+
+.country__name--wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.country__list p {
+  margin-bottom: 5px;
+}
+
+.country__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.country__flag {
+  margin-right: 10px;
+  width: 35px;
+  height: 100%;
+
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.country__text-bold {
+  font-weight: 600;
 }
