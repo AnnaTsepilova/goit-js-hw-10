@@ -10,6 +10,10 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  font-size: 18px;
+
+  background-image: radial-gradient(rgba(128, 128, 128, 0.5) 1px, transparent 0);
+    background-size: 32px 32px;
 }
 
 body,
@@ -40,15 +44,15 @@ img {
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
-  margin: 15px 0 15px 0;
-  border: 1px solid grey;
+  margin: 25px 0 25px 0;
+  border: 2px solid rgba(128, 128, 128, 0.3);
   border-radius: 4px;
   outline: rgba(0, 0, 0, 0);
 }
@@ -60,11 +64,7 @@ img {
 .country__name--wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-}
-
-.country__list p {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .country__item {
@@ -74,11 +74,22 @@ img {
 }
 
 .country__flag {
-  margin-right: 10px;
-  width: 35px;
   height: 100%;
-
   border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.country__flag-small {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.country__flag-big {
+  margin-right: 15px;
+  width: 45px;
+}
+
+.country__descr {
+  margin-bottom: 15px;
 }
 
 .country__text-bold {

@@ -51,7 +51,7 @@ function renderListOfSearchingCountries(countries) {
     return countries.map(({ flags: {svg: flagSvg}, name: {common: nameCommon} }) => {
         return `
             <li class="country__item">
-                <img class="country__flag" src="${flagSvg}" alt="Flag of ${nameCommon}" />
+                <img class="country__flag country__flag-small" src="${flagSvg}" alt="Flag of ${nameCommon}" />
                 <p class="country__name">${nameCommon}</p>
             </li>`   
     })
@@ -75,12 +75,12 @@ function renderCountryFullCard(country) {
         let lang = langsArray.join(', ');
         return `
             <div class="country__name--wrapper">
-                <img class="country__flag" src="${flagSvg}" alt="Flag of ${nameCommon}" />
+                <img class="country__flag country__flag-big" src="${flagSvg}" alt="Flag of ${nameCommon}" />
                 <h1>${nameCommon}</h1>
             </div>
-            <p><span class="country__text-bold">Capital:</span> ${capital}</p>
-            <p><span class="country__text-bold">Population:</span> ${population}</p>
-            <p><span class="country__text-bold">Languages:</span> ${lang}</p>`   
+            <p class="country__descr"><span class="country__text-bold">Capital:</span> ${capital}</p>
+            <p class="country__descr"><span class="country__text-bold">Population:</span> ${population}</p>
+            <p class="country__descr"><span class="country__text-bold">Languages:</span> ${lang}</p>`   
     })
     .join('');
 }
